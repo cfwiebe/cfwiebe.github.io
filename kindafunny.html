@@ -30,10 +30,21 @@
             </p>
             <canvas id="canvas" width="200" height="200"></canvas>
     <script>
+      var x ;
+      var y ;
+      var s ;
+      var ctx ;
+      var w ;
+      var h ;
+
+document.addEventListener('keydown', keybind);
+
+function keybind()
+{
       var canvas = document.getElementById("canvas");
       var ctx = canvas.getContext("2d");
       ctx.fillStyle = "blue";
-      ctx.fillRect(100, 100, 100, 100);
+      ctx.fillRect(100, 100, 100, 100)}
     </script>
         </div>
     </body>
